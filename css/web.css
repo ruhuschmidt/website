@@ -1,0 +1,282 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Nixie+One|Playfair+Display');
+/*CSS RESET*/
+*, 
+*:before,
+ *:after{
+ 	margin: 0; 
+ 	padding: 0; 
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ } 
+
+/*HEADER STYLE*/
+header{
+	font-family: 'Nixie One', cursive;
+}
+h1{
+	color: rgba(65,129,166,1);
+	font-size: 3.4em;
+	padding-top:10px;
+}
+h2{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	padding: 20px;
+}
+
+/*PARAGRAPH STYLE*/
+p{
+	margin: 12px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-align: left;
+	text-indent: 20px;
+	font-size: 1.3em;
+}
+/*LINKS STYLE*/
+a{
+	font-family: 'Playfair Display', serif;
+	text-decoration:  none;
+	color: rgba(255,255,255,1);
+}
+a:visited{
+	color: rgba(228,182,10,1);
+}
+
+a:hover{
+	color:rgba(65,129,166,1);
+}
+a:active{
+	color:rgba(255,255,255,1); 
+}
+/*NAV STYLE*/
+.navb{
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgba(228,182,10,.5);
+}
+nav{
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+nav li {
+	list-style-type: none;
+	line-height: 40px;
+	display: inline;
+	padding: 50px;
+	padding-top: 10px;
+}
+/*BODY*/
+body{
+	    background-color: rgba(130,197,217,.5);
+}
+/*ABOUT SYTLE*/
+/*PARAGRAPH*/
+.bio{
+	display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+#fun{
+	background-color: rgba(65,129,166,1);
+	padding:20px;
+}
+#school{
+	border-color: rgba(228,182,10,1);
+    border-style: dotted;
+    border-width: 5px;
+    padding:20px;
+}
+/*HOME STYLE*/
+#home{
+	font-size: 3em;
+	text-align: center;
+	color: rgba(65,129,166,1);
+}
+#home2{
+	text-align: center;
+}
+/*RESUME STYLE*/
+h3{
+	font-family: 'Playfair Display', serif;
+	padding: 10px;
+	/*color: rgba(65,129,166,1);*/
+	background-color: rgba(65,129,166,1);
+	font-size: 1.7em;
+}
+h4{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.4em;
+	padding: 10px;
+
+}
+ul{
+	margin-left: 40px;
+	list-style-type:none;
+	padding:10px;
+}
+li{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.1em;
+}
+#cont{
+	text-align: center;
+	padding-top: 50px;
+}
+#email{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 1.4em;
+	text-align: center;
+}
+#ref{
+	color: rgba(228,182,10,1);
+	font-family: 'Playfair Display', serif;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+.wrapper2{
+	padding-top: 20px;
+	margin: 0 auto;
+	max-width: 800px;	
+	margin-left:auto;
+	margin-right: auto;
+
+
+}
+/*WORK PAGE*/
+#work{
+	text-align: center;
+	padding:10px;
+}
+
+.sewing{
+	background-color: rgba(65,129,166,1);
+    padding-bottom: 10px;
+}
+.form{
+	border-color: rgba(228,182,10,1);
+    border-style: dotted;
+    border-width: 5px;
+	margin-top: 20px
+}
+.design{
+	background-color: rgba(65,129,166,1);
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+.web{
+	border-color: rgba(228,182,10,1);
+    border-style: dotted;
+    border-width: 5px;
+	margin-top: 20px;
+	font-size:2em;
+
+}
+h5{
+	margin: 12px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-align: left;
+	text-indent: 20px;
+	font-size: 1.2em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+/*IMG PLACE*/
+#me{
+	float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+#work{
+	display: flex;
+	justify-content: center;
+}
+
+figure{
+	display: flex;
+	margin:20px;
+	flex-flow: row;
+	flex-flow: wrap;
+	}
+img{
+	margin: 10px;
+}
+
+/*FOOTER*/
+footer{
+	font-family: 'Playfair Display', serif;
+	font-size: 0.8em;
+	text-align: center;
+	}
+/*ALL PAGES WRAPER*/
+.wrapper{
+	margin: 0 auto;
+	text-align: center;
+	max-width: 1000px
+
+}
+
+
+/****SLIDESHOW***/
+/* makes images responsive */
+
+/* takes care of clearing the floats */
+#slideshow:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* hides the images not being shown */
+#slideshow img {
+float: left;
+max-width: 100%;
+margin: 0 -100% 0 0;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 600px){
+	nav li {
+	padding:20px;
+	}
+
+		h1{
+		font-size:3em;
+	}
+	h3{
+		font-size: 1.5em;
+	}
+	h4{
+		font-size: 1.3em;
+	}
+}
+@media only screen and (max-width: 740px){
+	#me{
+		max-width: 70%;
+		display: flex;
+		justify-content: center;
+	}
+	#pot{
+		max-width: 70%;
+		display: flex;
+		justify-content: center;
+	}
+	#tea{
+		max-width: 70%;
+		display: flex;
+		justify-content: center;
+	}
+	.imgs{
+		display: flex;
+		flex-flow: wrap;
+	}
+}
+@media only screen and (max-width: 350px){
+	nav li {
+	padding:10px;
+	}
+}
